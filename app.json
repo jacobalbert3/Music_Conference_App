@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "MMBC Conference",
+    "slug": "mmbc-event-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "scheme": "mmbc",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.festival.mmbc-event-app",
+      "buildNumber": "2",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": ["remote-notification"],
+        "CFBundleDisplayName": "MMBC",
+        "UISupportedInterfaceOrientations~ipad": []
+      }
+    },
+    "platforms": [
+      "ios"
+    ],
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-font",
+      "@react-native-firebase/app"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "53ac5df3-ca5f-481a-861d-4ec7051fec1d"
+      }
+    },
+    "owner": "jralbert123",
+    "android": {
+      "package": "com.festival.mmbceventapp"
+    }
+  }
+}
